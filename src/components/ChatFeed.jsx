@@ -13,7 +13,7 @@ const ChatFeed = (props) => {
     console.log('print');
     console.log(chat, userName, messages);
 
-    renderMessages();
+
         
     const renderMessages = () => {
         const keys = Object.keys(messages);
