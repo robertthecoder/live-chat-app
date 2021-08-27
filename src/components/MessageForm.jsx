@@ -24,7 +24,7 @@ const MessageForm = (props) => {
     }
 
     const handleUpload = (event) => {
-        sendMessage(creds, chatId, {files: event.target.value, text: ''});
+        sendMessage(creds, chatId, {files: event.target.files, text: ''});
     }
 
     return (
@@ -39,7 +39,7 @@ const MessageForm = (props) => {
             
             />
 
-            <label htmlFor="upload-botton">
+            <label htmlFor="upload-button">
                 <span className="image-button"> 
                     <PictureOutlined className="picture-icon"/>
                 </span>
