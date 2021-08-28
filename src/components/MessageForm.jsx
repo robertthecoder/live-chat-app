@@ -28,7 +28,6 @@ const MessageForm = (props) => {
     }
 
     return (
-        
         <form className="message-form" onSubmit={handleSubmit}>
             <input 
                 className="message-input" 
@@ -36,7 +35,6 @@ const MessageForm = (props) => {
                 value={value}
                 onChange={handleChange}
                 onSubmit={handleSubmit}
-            
             />
 
             <label htmlFor="upload-button">
@@ -55,7 +53,6 @@ const MessageForm = (props) => {
             />
             <button type="submit" className="send-button">
                 <SendOutlined className="send-icon" /> 
-
             </button>
         </form>
     )

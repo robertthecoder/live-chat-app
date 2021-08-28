@@ -6,15 +6,19 @@ import ChatFeed from './components/ChatFeed';
 
 import './App.css';
 
-
+import LoginForm from './components/LoginForm'
 
 function App() {
+  if (!localStorage.getItem('username')) return <LoginForm />
+
+  console.log('username', localStorage.getItem('username'));
+
   return (
     <ChatEngine
       height="100vh"
       projectID="f0ef67c1-f0a1-4c18-964e-8364269fc093"
-      userName="javascriptmastery"
-      userSecret="secret"
+      userName={localStorage.getItem('username')}
+      userSecret={localStorage.getItem('password')}
       // userName="zackzimmer"
       // userSecret="sec"
       
